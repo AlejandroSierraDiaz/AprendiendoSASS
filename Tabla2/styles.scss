@@ -1,0 +1,102 @@
+@use "sass:list";
+
+// 1. Estilos automáticos para h1–h6 con tamaños personalizados
+$sizes: (
+  h1: 3rem,
+  h2: 2.5rem,
+  h3: 2rem,
+  h4: 1.5rem,
+  h5: 1.25rem,
+  h6: 1rem
+);
+
+@each $tag, $size in $sizes {
+  #{$tag} {
+    font-size: $size;
+    margin: 1rem 0;
+    color: rgb(85, 85, 85); // Color de texto gris
+  }
+}
+
+// 2. Lista de colores para asignar a las filas del cuerpo de la tabla
+$colores: 
+  rgb(255, 0, 0),    // Rojo
+  rgb(255, 0, 242),  // Rosa
+  rgb(0, 238, 255),  // Cyan
+  rgb(238, 255, 0),  // Amarillo
+  rgb(121, 121, 121),// Gris oscuro
+  rgb(192, 117, 19); // Naranja
+
+// Asignar un color de fondo distinto a cada fila del <tbody>
+@for $i from 1 through list.length($colores) {
+  tbody tr:nth-child(#{$i}) {
+    background-color: list.nth($colores, $i);
+  }
+}
+
+// 3. Función para calcular el ancho en función de un valor base y un factor
+@function calcularAnchura($base, $factor) {
+  @return $base * $factor;
+}
+
+// 4. Estilos para la tabla
+table {
+  width: 50%; // ancho base
+  border-collapse: collapse;
+  margin: 20px auto;
+  font-size: xx-large;
+  
+  th, td {
+    border: 1px solid black;
+    padding: 10px;
+    color: rgb(85, 85, 85);
+  }
+  
+  th {
+    background-color: rgb(0, 255, 0);
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  td:first-child {
+    text-align: left;
+  }
+  
+  td:last-child {
+    text-align: right;
+  }
+  
+  // Breakpoints para la tabla (usando la función calcularAnchura)
+  @media (max-width: 1200px) {
+    width: calcularAnchura(50%, 0.8); // 50% * 0.8 = 40%
+    font-size: x-large;
+  }
+  
+  @media (max-width: 768px) {
+    width: calcularAnchura(50%, 0.6); // 50% * 0.6 = 30%
+    font-size: large;
+  }
+  
+  @media (max-width: 480px) {
+    width: calcularAnchura(50%, 0.4); // 50% * 0.4 = 20%
+    font-size: medium;
+  }
+}
+
+// 5. Responsividad para el contenedor principal (la sección)
+section {
+  width: 50%;
+  margin: 20px auto;
+  
+  @media (max-width: 1200px) {
+    width: calcularAnchura(50%, 0.8);
+  }
+  
+  @media (max-width: 768px) {
+    width: calcularAnchura(50%, 0.6);
+  }
+  
+  @media (max-width: 480px) {
+    width: calcularAnchura(50%, 0.4);
+  }
+}

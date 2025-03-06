@@ -1,0 +1,122 @@
+h1 {
+  font-size: 3rem;
+  margin: 1rem 0;
+  color: rgb(85, 85, 85);
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+  color: rgb(85, 85, 85);
+}
+
+h3 {
+  font-size: 2rem;
+  margin: 1rem 0;
+  color: rgb(85, 85, 85);
+}
+
+h4 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  color: rgb(85, 85, 85);
+}
+
+h5 {
+  font-size: 1.25rem;
+  margin: 1rem 0;
+  color: rgb(85, 85, 85);
+}
+
+h6 {
+  font-size: 1rem;
+  margin: 1rem 0;
+  color: rgb(85, 85, 85);
+}
+
+tbody tr:nth-child(1) {
+  background-color: rgb(255, 0, 0);
+}
+
+tbody tr:nth-child(2) {
+  background-color: rgb(255, 0, 242);
+}
+
+tbody tr:nth-child(3) {
+  background-color: rgb(0, 238, 255);
+}
+
+tbody tr:nth-child(4) {
+  background-color: rgb(238, 255, 0);
+}
+
+tbody tr:nth-child(5) {
+  background-color: rgb(121, 121, 121);
+}
+
+tbody tr:nth-child(6) {
+  background-color: rgb(192, 117, 19);
+}
+
+table {
+  width: 50%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  font-size: xx-large;
+}
+table th, table td {
+  border: 1px solid black;
+  padding: 10px;
+  color: rgb(85, 85, 85);
+}
+table th {
+  background-color: rgb(0, 255, 0);
+  text-align: center;
+  font-weight: bold;
+}
+table td:first-child {
+  text-align: left;
+}
+table td:last-child {
+  text-align: right;
+}
+@media (max-width: 1200px) {
+  table {
+    width: 40%;
+    font-size: x-large;
+  }
+}
+@media (max-width: 768px) {
+  table {
+    width: 30%;
+    font-size: large;
+  }
+}
+@media (max-width: 480px) {
+  table {
+    width: 20%;
+    font-size: medium;
+  }
+}
+
+section {
+  width: 50%;
+  margin: 20px auto;
+}
+@media (max-width: 1200px) {
+  section {
+    width: 40%;
+  }
+}
+@media (max-width: 768px) {
+  section {
+    width: 30%;
+  }
+}
+@media (max-width: 480px) {
+  section {
+    width: 20%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

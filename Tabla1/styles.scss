@@ -8,10 +8,6 @@ $colores:
     rgb(121, 121, 121),
     rgb(192, 117, 19);
 
-@function calcularAnchura($base, $factor) {
-    @return $base * $factor;
-}
-
 table {
     width: 50%;
     border-collapse: collapse;
