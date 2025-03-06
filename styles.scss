@@ -1,0 +1,43 @@
+@use "sass:list";
+
+$colores: 
+    rgb(255, 0, 0),
+    rgb(255, 0, 242),
+    rgb(0, 238, 255),
+    rgb(238, 255, 0),
+    rgb(121, 121, 121),
+    rgb(192, 117, 19);
+    
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    font-size: xx-large;
+
+    th, td {
+        border: 1px solid black;
+        padding: 10px;
+        color: rgb(85, 85, 85);
+    }
+
+    th {
+        background-color: rgb(0, 255, 0);
+        text-align: center;
+        font-weight: bold;
+    }
+
+    @for $i from 1 through list.length($colores) {
+        tbody tr:nth-child(#{$i}) {
+            background-color: list.nth($colores, $i);
+        }
+    }
+
+    td:first-child {
+        text-align: left;
+    }
+
+    td:last-child {
+        text-align: right;
+    }
+}
