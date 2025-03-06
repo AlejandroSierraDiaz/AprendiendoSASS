@@ -1,12 +1,35 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+@use "sass:list";
+$colores: 
+    green,
+    red,
+    magenta,
+    cyan,
+    yellow,
+    gray,
+    orange;
 
-body{
-    color : white;
-    background-color: #ff0000;
-    font-family: 'Arial', sans-serif;
-    text-align: center;
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    
+    th, td {
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+    }
+
+    th {
+        background-color: list.nth($colores, 1); // Actualizado correctamente
+        color: green;
+        font-weight: bold;
+    }
+
+    // Aplicar los colores a las filas usando @each
+    @each $color in $colores {
+        $index: list.index($colores, $color); // Actualizado correctamente
+        tbody tr:nth-child(#{$index}) {
+            background-color: $color;
+        }
+    }
 }
