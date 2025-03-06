@@ -1,6 +1,5 @@
 @use "sass:list";
 
-// 1. Estilos automáticos para h1–h6 con tamaños personalizados
 $sizes: (
   h1: 3rem,
   h2: 2.5rem,
@@ -14,34 +13,30 @@ $sizes: (
   #{$tag} {
     font-size: $size;
     margin: 1rem 0;
-    color: rgb(85, 85, 85); // Color de texto gris
+    color: rgb(85, 85, 85);
   }
 }
 
-// 2. Lista de colores para asignar a las filas del cuerpo de la tabla
 $colores: 
-  rgb(255, 0, 0),    // Rojo
-  rgb(255, 0, 242),  // Rosa
-  rgb(0, 238, 255),  // Cyan
-  rgb(238, 255, 0),  // Amarillo
-  rgb(121, 121, 121),// Gris oscuro
-  rgb(192, 117, 19); // Naranja
+  rgb(255, 0, 0),
+  rgb(255, 0, 242),
+  rgb(0, 238, 255),
+  rgb(238, 255, 0),
+  rgb(121, 121, 121),
+  rgb(192, 117, 19);
 
-// Asignar un color de fondo distinto a cada fila del <tbody>
 @for $i from 1 through list.length($colores) {
   tbody tr:nth-child(#{$i}) {
     background-color: list.nth($colores, $i);
   }
 }
 
-// 3. Función para calcular el ancho en función de un valor base y un factor
 @function calcularAnchura($base, $factor) {
   @return $base * $factor;
 }
 
-// 4. Estilos para la tabla
 table {
-  width: 50%; // ancho base
+  width: 50%;
   border-collapse: collapse;
   margin: 20px auto;
   font-size: xx-large;
@@ -66,24 +61,22 @@ table {
     text-align: right;
   }
   
-  // Breakpoints para la tabla (usando la función calcularAnchura)
   @media (max-width: 1200px) {
-    width: calcularAnchura(50%, 0.8); // 50% * 0.8 = 40%
+    width: calcularAnchura(50%, 0.8);
     font-size: x-large;
   }
   
   @media (max-width: 768px) {
-    width: calcularAnchura(50%, 0.6); // 50% * 0.6 = 30%
+    width: calcularAnchura(50%, 0.6);
     font-size: large;
   }
   
   @media (max-width: 480px) {
-    width: calcularAnchura(50%, 0.4); // 50% * 0.4 = 20%
+    width: calcularAnchura(50%, 0.4);
     font-size: medium;
   }
 }
 
-// 5. Responsividad para el contenedor principal (la sección)
 section {
   width: 50%;
   margin: 20px auto;
