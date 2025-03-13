@@ -1,0 +1,8 @@
+@use "sass:list";
+@use "variables" as v;
+
+@for $i from 1 through list.length(v.$colores) {
+    tbody tr:nth-child(#{$i}) {
+      background-color: list.nth(v.$colores, $i);
+    }
+  }
