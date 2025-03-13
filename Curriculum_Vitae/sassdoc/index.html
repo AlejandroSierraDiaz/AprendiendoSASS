@@ -1,0 +1,62 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>SassDoc</title><link rel="stylesheet" href="assets/css/main.css"><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,700" rel="stylesheet" type="text/css"><meta name="viewport" content="width=device-width"><meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible"><!-- Open Graph tags --><meta property="og:title" content="SassDoc - SassDoc"><meta property="og:type" content="website"><meta property="og:description" content="Release the docs!"><!-- Thanks to Sass-lang.com for the icons --><link href="assets/images/favicon.png" rel="shortcut icon"></head><body><aside class="sidebar" role="nav"><div class="sidebar__header"><h1 class="sidebar__title">SassDoc</h1></div><div class="sidebar__body"><button type="button" class="btn-toggle js-btn-toggle" data-alt="Open all">Close all</button><p class="sidebar__item sidebar__item--heading" data-slug="undefined"><a href="#undefined">General</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="undefined-variable"><a href="#undefined-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="header-bg" data-type="variable"><a href="#undefined-variable-header-bg">header-bg</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="h1-size" data-type="variable"><a href="#undefined-variable-h1-size">h1-size</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="base-spacing" data-type="variable"><a href="#undefined-variable-base-spacing">base-spacing</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="font-family" data-type="variable"><a href="#undefined-variable-font-family">font-family</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="undefined-css"><a href="#undefined-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="body" data-type="css"><a href="#undefined-css-body">body</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".cv-container" data-type="css"><a href="#undefined-css-.cv-container">.cv-container</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".header" data-type="css"><a href="#undefined-css-.header">.header</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".section" data-type="css"><a href="#undefined-css-.section">.section</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="a" data-type="css"><a href="#undefined-css-a">a</a></li></ul></div></div></aside><article class="main" role="main"><header class="header" role="banner"><div class="container"><div class="sassdoc__searchbar searchbar"><label for="js-search-input" class="visually-hidden">Search</label><div class="searchbar__form" id="js-search"><input name="search" type="search" class="searchbar__field" autocomplete="off" autofocus id="js-search-input" placeholder="Search"><ul class="searchbar__suggestions" id="js-search-suggestions"></ul></div></div></div></header><section class="main__section"><h1 class="main__heading" id="undefined"><div class="container">General</div></h1><section class="main__sub-section" id="undefined-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="undefined-variable-header-bg"><h3 class="item__heading"><a class="item__name" href="#undefined-variable-header-bg">header-bg</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$header-bg: #2d3748;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>En esta parte se definen los colores utilizados en el diseño del CV, como el fondo de la cabecera, los colores de texto y los enlaces</p></div></section><section class="main__item container item" id="undefined-variable-h1-size"><h3 class="item__heading"><a class="item__name" href="#undefined-variable-h1-size">h1-size</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$h1-size: 3rem;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>En esta parte se definen los tamaños de texto utilizados en el CV, como los tamaños de los encabezados y el texto general</p></div></section><section class="main__item container item" id="undefined-variable-base-spacing"><h3 class="item__heading"><a class="item__name" href="#undefined-variable-base-spacing">base-spacing</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$base-spacing: 20px;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>En esta parte se definen los espaciados utilizados en el CV, como márgenes y rellenos</p></div></section><section class="main__item container item" id="undefined-variable-font-family"><h3 class="item__heading"><a class="item__name" href="#undefined-variable-font-family">font-family</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$font-family: &#39;Arial&#39;, sans-serif;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Letra base del CV</p></div></section></section><section class="main__sub-section" id="undefined-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="undefined-css-body"><h3 class="item__heading"><a class="item__name" href="#undefined-css-body">body</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>body {
+  font-family: $font-family;
+  font-size: $body-size;
+  background-color: $background;
+  color: $text-primary;
+  line-height: 1.6;
+}</code>" data-collapsed="body { ... }"><code>body { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>En esta parte se da estilo al cuerpo de la página web, estableciendo la fuente, el tamaño del texto y el color de fondo</p></div></section><section class="main__item container item" id="undefined-css-.cv-container"><h3 class="item__heading"><a class="item__name" href="#undefined-css-.cv-container">.cv-container</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.cv-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: $white;
+  padding: $base-spacing;
+  border-radius: 8px;
+}</code>" data-collapsed=".cv-container { ... }"><code>.cv-container { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>En esta parte se da estilo al contenedor principal del CV, estableciendo el tamaño máximo y el fondo blanco</p></div></section><section class="main__item container item" id="undefined-css-.header"><h3 class="item__heading"><a class="item__name" href="#undefined-css-.header">.header</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.header {
+  text-align: center;
+  background-color: $header-bg;
+  color: $white;
+  padding: $lg-spacing;
+  border-radius: 8px;
+
+  h1 {
+    font-size: $h1-size;
+    margin-bottom: $sm-spacing;
+  }
+
+  p {
+    font-size: $h5-size;
+    font-weight: 300;
+  }
+}</code>" data-collapsed=".header { ... }"><code>.header { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Esta es la cabecera del CV, donde se le da un fondo oscuro, un color blanco para el texto y se centra el contenido</p></div></section><section class="main__item container item" id="undefined-css-.section"><h3 class="item__heading"><a class="item__name" href="#undefined-css-.section">.section</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.section {
+  margin: $lg-spacing 0;
+  padding-bottom: $sm-spacing;
+  border-bottom: 2px solid $border;
+
+  h2 {
+    font-size: $h2-size;
+    color: $primary;
+    margin-bottom: $sm-spacing;
+  }
+
+  p {
+    font-size: $h4-size;
+    color: $text-secondary;
+    margin-bottom: $sm-spacing;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      font-size: $body-size;
+      margin-bottom: $sm-spacing;
+    }
+  }
+}</code>" data-collapsed=".section { ... }"><code>.section { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>En esta parte se da estilo a las secciones del CV, incluyendo márgenes, espaciado y colores para los encabezados y párrafos</p></div></section><section class="main__item container item" id="undefined-css-a"><h3 class="item__heading"><a class="item__name" href="#undefined-css-a">a</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>a {
+  color: $link;
+  text-decoration: none;
+
+  &amp;:hover {
+    color: $link-hover;
+  }
+}</code>" data-collapsed="a { ... }"><code>a { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>En esta parte se da estilo a los enlaces, definiendo el color y el efecto al pasar el ratón sobre ellos</p></div></section></section></section><footer class="footer" role="contentinfo"><div class="container"><div class="footer__project-info project-info"><!-- Name and URL --> <span class="project-info__name">SassDoc</span><!-- Version --><!-- License --></div><a class="footer__watermark" href="http://sassdoc.com"><img src="assets/images/logo_light_inline.svg" alt="SassDoc Logo"></a></div></footer></article><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script><script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script><script src="assets/js/main.min.js"></script></body></html>
